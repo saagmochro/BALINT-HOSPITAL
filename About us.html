@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us – BALINT HEALTH CENTRE</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f4f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #01b7f2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #01b7f2;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #01b7f2;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1606041008023-472dfb5e5301') center/cover no-repeat;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+    .hero h1 {
+      font-size: 36px;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .content h2 {
+      color: #01b7f2;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #01b7f2;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin: 10px 0 0;
+      }
+    }
+  </style>
+   <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <nav>
+    <div class="logo">BALINT HEALTH CENTRE</div>
+    <div>
+      <a href="Front page.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="sign_up.html">Login</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>About Us</h1>
+  </div>
+
+  <div class="content">
+    <h2 data-aos="fade-right">Who We Are</h2>
+    <p data-aos="fade-up">
+      At BALINT HEALTH CENTRE, we are committed to providing exceptional healthcare services that are affordable, compassionate, and accessible. Our facility is staffed with a team of experienced doctors, nurses, and specialists dedicated to improving lives through innovative treatments and patient-centered care.
+    </p>
+
+    <h2 data-aos="fade-right" data-aos-delay="100">Our Mission</h2>
+    <p data-aos="fade-up" data-aos-delay="100">
+      To enhance the health and well-being of our community by delivering comprehensive, high-quality medical care in a warm and welcoming environment.
+    </p>
+
+    <h2 data-aos="fade-right" data-aos-delay="200" >Our Vision</h2>
+    <p data-aos="fade-up" data-aos-delay="200" >
+      To be a trusted leader in healthcare, known for excellence in service, innovation in medicine, and a deep-rooted commitment to our patients.
+    </p>
+
+    <h2 data-aos="fade-right" data-aos-delay="300">Core Values</h2>
+    <ul  data-aos="fade-up" data-aos-delay="300">
+      <li>Compassion</li>
+      <li>Excellence</li>
+      <li>Integrity</li>
+      <li>Respect</li>
+      <li>Innovation</li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 BALINT HEALTH CENTRE. All rights reserved.
+  </footer>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  });
+</script>
+
+</body>
+</html>

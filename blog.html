@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog - BALINT HEALTH CENTRE</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f7fafd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #01b7f2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #f0f0f0;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #01b7f2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .blog-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .blog-post {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+    }
+
+    .blog-post:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-post img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .blog-post h3 {
+      color: #01b7f2;
+      margin-bottom: 10px;
+    }
+
+    .blog-post p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      color: #01b7f2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #01b7f2;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+
+    .footer-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-column {
+      flex: 1 1 250px;
+      margin: 10px;
+    }
+
+    .footer-column h4 {
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    .footer-column a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .footer-column a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13px;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      padding-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BALINT HEALTH CENTRE BLOG</h1>
+    <p>Wellness. Care. Knowledge.</p>
+  </header>
+
+  <nav>
+    <a href="Front page.html">🏠 Home</a>
+    <a href="about.html">About Us</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="blog-container">
+    <div class="blog-post">
+      <img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg?w=1155&h=1528" alt="Health Tips">
+      <h3>5 Daily Health Tips for a Stronger You</h3>
+      <p>Discover essential daily habits to boost your immunity, stay active, and maintain a balanced lifestyle.</p>
+      <a class="read-more" href="#">Read More →</a>
+    </div>
+
+    <div class="blog-post">
+      <img src="https://danpal.com/wp-content/uploads/2023/09/BIM.jpg" alt="Clinic Services">
+      <h3>Our New Outpatient Services Launched</h3>
+      <p>Explore the latest enhancements to our outpatient department and how they benefit your wellness journey.</p>
+      <a class="read-more" href="#">Read More →</a>
+    </div>
+
+    <div class="blog-post">
+      <img src="https://www.shutterstock.com/image-vector/male-doctor-smiling-happy-face-600nw-2481032615.jpg" alt="Doctor Advice">
+      <h3>When Should You Visit the Doctor?</h3>
+      <p>Learn the warning signs that mean you shouldn’t delay your visit to the hospital.</p>
+      <a class="read-more" href="#">Read More →</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>BALINT HEALTH CENTRE</h4>
+        <p>Quality, affordable healthcare for every stage of life.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <p>📍 Nairobi, Kenya</p>
+        <p>📞 +254 700 123 456</p>
+        <p>📧 info@balinthealth.org</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <a href="Front page.html">🏠 Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="sign_up.html">Login</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 BALINT HEALTH CENTRE. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
