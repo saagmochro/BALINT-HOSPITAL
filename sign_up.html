@@ -182,7 +182,7 @@
         <h1>BALINT HEALTH CENTRE</h1>
         <p>Your Health, Our Priority.</p>
       </div>
-      <a href="index.html">
+      <a href="Front page.html">
       <button>🏠 Home</button>
       </a>
     </div>
@@ -195,7 +195,7 @@
         <div class="tab" onclick="showForm('signup')">Sign Up</div>
       </div>
 
-      <form id="loginForm" class="active" data-aos="fade-up" method="POST" action="register.php">
+      <form id="loginForm" class="active" data-aos="fade-up" method="POST" action="login.php">
   <input type="email" name="email" placeholder="Email" required />
   <input type="password" name="password" placeholder="Password" required />
        <div class="form-check">
@@ -206,16 +206,28 @@
         <div class="small-text">Forgot password?</div>
       </form>
 
-  <form id="signupForm" class="" data-aos="fade-up" method="POST" action="register.php">
-  <input type="text" name="full_name" placeholder="Full Name" required><br>
-  <input type="text" name="phone" placeholder="Phone Number" required><br>
-  <input type="email" name="email" placeholder="Email" required><br>
-  <select name="gender" required>
+<form id="signupForm" data-aos="fade-up" method="POST" action="register.php">
+  <input type="text" name="full_name" placeholder="Full Name" required />
+  
+  <input type="text" name="phone" placeholder="Phone Number" required />
+  
+  <input type="email" name="email" placeholder="Email" required />
+  
+  <select name="gender" required style="padding: 12px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; width: 90%;">
+    <option value="" disabled selected>Select Gender</option>
     <option value="Male">Male</option>
     <option value="Female">Female</option>
-  </select><br>
-  <input type="password" name="password" placeholder="Password" required><br>
-  <input type="password" name="confirm_password" placeholder="Confirm Password" required><br>
+  </select>
+  
+  <input type="password" name="password" placeholder="Password" required />
+  
+  <input type="password" name="confirm_password" placeholder="Confirm Password" required />
+  
+  <div class="form-check">
+    <input type="checkbox" name="terms" required />
+    <label>I agree to the <a href="#">Terms and Conditions</a></label>
+  </div>
+  
   <button type="submit">Register</button>
 </form>
 
@@ -250,4 +262,3 @@
 </script>
 </body>
 </html>
-
